@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+.form-control {
+  display: block;
+  margin: 5px 260px;
+  width: 845px;
+}
+
+.bigger {
+  font-size: 40px;
+}
+
+.temperature-units {
+  font-size: 15px;
+}
+
+.center-all {
+  text-align: center;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 15px;
+}
+
+.city {
+  text-align: center;
+}
+
+.country1 {
+  text-align: center;
+}
+
+.emoji {
+  text-align: center;
+  font-size: 60px;
+}
+
+.card {
+  margin: 5px 260px;
+}
+
+.search-city {
+  margin-top: 70px;
+  margin-left: 370px;
+  min-width: 330px;
+  width: 810px;
+  border-radius: 5px;
+  border: solid 1px #dfdfdf;
+  padding: 10px;
+}
+
+.new-button {
+  border: solid 1px #dfdfdf;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.new-button:hover {
+  background: #f0efef;
+  border: solid 1px #dfdfdf;
+  border-radius: 5px;
+}

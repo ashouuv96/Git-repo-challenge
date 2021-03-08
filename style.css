@@ -3,10 +3,18 @@ body {
 }
 .form-control {
   display: block;
+  align-items: center;
   margin: 5px 260px;
   width: 845px;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .bigger {
   font-size: 40px;
 }

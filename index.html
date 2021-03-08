@@ -10,6 +10,7 @@
         href="src/styles.css" 
         media="screen" 
         />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
         rel="stylesheet"
@@ -21,37 +22,31 @@
 </head>
 <body>
     <div class="container">
-
- 
     <br />
     <br />
     <div id="weather-app">
         <div class="card">
-        <br />
-    <form id="search-form">
+        <br/>
+        <form 
+        id="search-form" class="mb-3">
         <input
         type="search" 
-        class="mb-3" 
-        id="search-input" 
+        class="m-3"
+        id="city-input" 
         autofocus="on"
         autocomplete="off"
         name="q" 
         aria-label="Search through site content" 
         placeholder="Enter a city ..." required>
-        <button class="btn btn-primary" id="button-search">
+                <button class="btn btn-primary" id="button-search">
             🔎
-        </button>
+                </button>
     </form>
             <div class="card-body">
                 <span class="center-all">
                     <div class="row align-items-center">
                         <div class="col">
-                            <strong id="before" >Yesterday</strong> 
-                        </div>
-                        <div class="col" >
-                            <span id ="monthly">
-                                
-                            </span>
+                            <strong id="overview" ></strong> 
                         </div>
                         <div class="col" id=weather-description>
                             <strong id="after"></strong> 
@@ -70,28 +65,30 @@
                     </div>
 
                     <div class="temperature-container">
-                        <h1 class="temperature"> <span class='bigger' id="temperature"></span> °C | F°</h1>
+                        <h1 class="temperature"> <span class='bigger' id="temperature"></span></h1> 
+                        <span class="units">
+                            <a href="#" id="celsius-link" class="active">° C | 
+                            <a href="#" id="fahrenheit-link"></a> °F </a> </span>
                     </div>
 
                     <h3 class="city" id="city">
                         
                     </h3>
-                    <h4 class="emoji">
+                    <h4 class="icon">
                         🌞 | 🌘
                     </h4>
 
                     <div class="row align-items-center">
                         <div class="col">
-                            Prec. <span id="precipitation"></span>%
+                            Precipitation: <span id="precipitation"></span>%
                         </div>
                         <div class="col">
-                            Wind <span id="wind"></span> km/h
+                            Wind: <span id="wind"></span> km/h
                         </div>
                         <div class="col">
-                            Humidity <span id="humidity"></span> % 
+                            Humidity: <span id="humidity"></span> % 
                         </div>
                     </div>
-            </div>
             </span>
         </div>
         </span>
@@ -101,7 +98,7 @@
         <div class="card-body">
             <div class="row align-items-center">
                 <span class="center-everything">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" id="forecast">
                         
                     </div>
             </div>

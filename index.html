@@ -22,33 +22,26 @@
 <body>
     <div class="container">
 
-    <form 
-        id="search-form"
-    >
+ 
+    <br />
+    <br />
+    <div id="weather-app">
+        <div class="card">
+        <br />
+    <form id="search-form">
         <input
         type="search" 
-        class="search-city" 
+        class="mb-3" 
         id="search-input" 
         autofocus="on"
         autocomplete="off"
         name="q" 
         aria-label="Search through site content" 
         placeholder="Enter a city ..." required>
-        
         <button class="btn btn-primary" id="button-search">
             🔎
         </button>
-        <input
-        id=current-location
-       type="button"
-       class="btn btn-secondary"
-       value="Current City"
-        />
     </form>
-    <br />
-    <br />
-    <div id="weather-app">
-        <div class="card">
             <div class="card-body">
                 <span class="center-all">
                     <div class="row align-items-center">
@@ -77,11 +70,11 @@
                     </div>
 
                     <div class="temperature-container">
-                        <h1 class="temperature"> <span class='bigger' id="temperature">19</span> <strong>°C</strong> | F°</h1>
+                        <h1 class="temperature"> <span class='bigger' id="temperature"></span> °C | F°</h1>
                     </div>
 
                     <h3 class="city" id="city">
-                        Paris
+                        
                     </h3>
                     <h4 class="emoji">
                         🌞 | 🌘
@@ -89,13 +82,13 @@
 
                     <div class="row align-items-center">
                         <div class="col">
-                            Prec. <span id="precipitation">5</span>%
+                            Prec. <span id="precipitation"></span>%
                         </div>
                         <div class="col">
-                            Wind <span id="wind">5</span> km/h
+                            Wind <span id="wind"></span> km/h
                         </div>
                         <div class="col">
-                            Humidity <span id="humidity"> 6% </span>
+                            Humidity <span id="humidity"></span> % 
                         </div>
                     </div>
             </div>
